@@ -1,0 +1,55 @@
+body {
+    font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+div.banner {
+    border: 1px solid;
+    padding: 1rem;
+    font-weight: 600;
+    background-color: #b3a4b0;
+    text-align: center;
+}
+
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+section {
+    padding: 10px;
+}
+
+h2 {
+    color: navy;
+    text-align: left;
+    grid-column: span 2;
+}
+
+article p {
+    text-align: justify;
+}
+
+.callout {
+    color: #b0b0a0;
+    background-color: #612456;
+    grid-column: span 2;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+}

@@ -1,11 +1,7 @@
 const options = {
     year: "numeric"
 };
-
 document.querySelector("#yearDate").innerHTML = new Date().toLocaleDateString("en-US", options);
-
-//*let currentYear = new Date(document.lastModified);//*
-//*document.querySelector("#lastModified").textContent = currentYear;
 
 function formatLastModified(date) { //lo convierte a cadena, y asegura que tenga dos dígitos, añadiendo un cero al inicio si es necesario. 
     let day = date.getDate().toString().padStart(2, '0'); //Obtiene el mes de la fecha (0-11), le suma 1 para obtener el valor correcto (1-12), lo convierte a cadena y asegura que tenga dos dígitos. 

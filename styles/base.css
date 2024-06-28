@@ -22,3 +22,15 @@ nav a {
     text-decoration: none;
     color: white;
 }
+
+#info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+footer {
+    margin: auto;
+    background-color: #c0c0c0;
+    text-align: center;
+}

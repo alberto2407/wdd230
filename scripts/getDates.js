@@ -17,5 +17,10 @@ let lastModified = new Date(document.lastModified);
 document.querySelector('#lastModified').textContent = formatLastModified(lastModified); //Alberto profesor FIN
 
 //HAMBURGUER BUTTON//
-const hamButton = document.querySelector('.menu');
+const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});

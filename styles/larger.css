@@ -21,4 +21,12 @@
         gap: 20px;
     }
 
+    #menu {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
 }

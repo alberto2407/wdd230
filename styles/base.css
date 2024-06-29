@@ -70,15 +70,53 @@ nav a {
     right: 10px;
 }
 
-.menu::before {
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    width: 100%;
+    height: 5rem;
+}
+
+#menu::before {
     content: "☰";
+    font-size: 3rem;
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation li {
+    display: none;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
 }
 
 .info-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
-    justify-items: center;
     margin: 10px;
     padding: 10px;
 
@@ -87,14 +125,17 @@ nav a {
 .activity {
     border: 3px solid black;
     padding: 5px;
-
     background-color: rgba(17, 31, 45, 0.5);
-    backdrop-filter: blur(1.5rem);
     border-radius: 1rem;
-    box-shadow: rgba(105, 105, 105, 0.26);
+    box-shadow: 5px 10px 1.5px gray;
     padding-block: 1em;
     padding-inline: 1em;
 
+}
+
+.Week {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -106,11 +147,15 @@ li {
     border: 3px solid black;
     padding: 5px;
     background-color: rgba(17, 31, 45, 0.5);
-    backdrop-filter: blur(1.5rem);
     border-radius: 1rem;
-    box-shadow: rgba(105, 105, 105, 0.26);
+    box-shadow: 5px 10px 1.5px gray;
     padding-block: 1em;
     padding-inline: 1em;
+}
+
+.place {
+    display: flex;
+    justify-content: center;
 }
 
 footer {

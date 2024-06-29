@@ -5,4 +5,20 @@
         text-decoration: none;
 
     }
+
+    .activity {
+        grid-column: 1 / 3;
+    }
+
+    .weather {
+        grid-column: 3 / 4;
+    }
+
+    main ul {
+        margin-block: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }

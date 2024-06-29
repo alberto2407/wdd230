@@ -15,3 +15,7 @@ function formatLastModified(date) { //lo convierte a cadena, y asegura que tenga
 } // Coloca la fecha de la última modificación, esta hora solo cambiará cuando el archivo HTML sea editado y guardado nuevamente en el servidor por el .lastModified 
 let lastModified = new Date(document.lastModified);
 document.querySelector('#lastModified').textContent = formatLastModified(lastModified); //Alberto profesor FIN
+
+//HAMBURGUER BUTTON//
+const hamButton = document.querySelector('.menu');
+const navigation = document.querySelector('.navigation');

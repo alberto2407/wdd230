@@ -90,9 +90,9 @@ nav a {
     content: "❎";
 }
 
-.navigation li {
-    display: none;
-}
+/* .navigation li {
+     display: none;
+} */
 
 .open li {
     display: block;
@@ -108,9 +108,21 @@ nav a {
 }
 
 .navigation a:hover {
-    background-color: #bbb;
-    color: #333;
+    background-color: white;
+    color: black;
     font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+.stuff {
+    margin: .5m;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
 }
 
 .info-box {

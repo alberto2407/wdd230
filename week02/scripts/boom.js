@@ -2,6 +2,15 @@ const input = document.querySelector("#favchap");
 const list = document.querySelector("#list");
 const button = document.querySelector("#button");
 
+
+// Añadido 
+function capitalizeWords(str) { // \b: Encuentra un límite de palabra (el punto donde una palabra comienza o termina). 
+    // \w: Coincide con cualquier carácter alfanumérico (es decir, cualquier letra o número). 
+    // \g: El modificador de búsqueda global para encontrar todas las coincidencias en la cadena. 
+    return str.replace(/\b\w/g, char => char.toUpperCase());
+}
+// Añadido
+
 button.addEventListener("click", () => {
     if (input.value != "") {
         let listItem = document.createElement("li");

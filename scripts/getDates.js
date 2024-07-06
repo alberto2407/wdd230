@@ -23,5 +23,10 @@ const navigation = document.querySelector('.navigation');
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
-    // Menu de hamburguesa 
 });
+
+let darkBtn = document.querySelector('#darkBtn');
+let main = document.querySelector('main');
+darkBtn.addEventListener('click', () => {
+    main.classList.toggle('dark');
+})

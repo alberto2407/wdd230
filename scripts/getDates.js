@@ -30,3 +30,18 @@ let main = document.querySelector('main');
 darkBtn.addEventListener('click', () => {
     main.classList.toggle('dark');
 })
+
+// Visits Counter
+function updatePageVisitsCounter() {
+    let numVisits = Number(window.localStorage.getItem("numVisitsCounter")) || 0;
+    const visitsDisplay = document.querySelector(".visitors");
+
+    if (numVisits === 0) {
+        visitsDisplay.textContent = `Welcome! This is your first visit.`;
+    } else {
+        visitsDisplay.textContent = numVisits + 1;
+    }
+
+    localStorage.setItem("numVisitsCounter", numVisits);
+}
+updatePageVisitsCounter();

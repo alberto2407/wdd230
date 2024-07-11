@@ -17,12 +17,32 @@ main h1 {
     justify-content: center;
 }
 
-main h2 {
+main h3 {
     background-color: black;
     color: white;
     border-radius: 0.5rem;
     text-align: center;
     padding: 5px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-title {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    padding: 0.8rem;
+    opacity: 0.65;
+    white-space: nowrap;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    align-items: center;
 }
 
 header {
@@ -175,7 +195,7 @@ nav a {
     justify-content: center;
 }
 
-.weather {
+.information {
     border: 3px solid black;
     padding: 5px;
     background-color: rgba(17, 31, 45, 0.5);

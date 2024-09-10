@@ -29,6 +29,10 @@ let darkBtn = document.querySelector('#darkBtn');
 let main = document.querySelector('main');
 darkBtn.addEventListener('click', () => {
     main.classList.toggle('dark');
+    const weekLinks = document.querySelectorAll('.Week a');
+    weekLinks.forEach(link => {
+        link.classList.toggle('dark');
+    });
 })
 
 // Visits Counter

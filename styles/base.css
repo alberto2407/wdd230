@@ -75,6 +75,11 @@ main section div.dark {
     color: white;
 }
 
+.Week a.dark {
+    background-color: black;
+    color: white;
+}
+
 nav {
     position: relative;
 }

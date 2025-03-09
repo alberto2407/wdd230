@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D4D72;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.profile {
+    margin-right: 2rem;
+}
+
+/* Navigation*/
+
+nav {
+    background-color:black;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    color: #FFFFFF;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.active {
+    background-color: #643219;
+}
+
+nav a:hover {
+    border: 1px solid white;
+}
+
+/* Main*/
+
+.title-section {
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 35px 2px rgba(0, 0, 0, 0.40);
+}
+
+.card h2 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    background-color: #1D4D72;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.card a {  
+    padding: 2px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+.week-activities {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.p-info {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1D4D72;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.last-modified {
+    color: yellow;
+}

@@ -1,0 +1,14 @@
+@media (min-width: 650px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Navigation */
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    
+}

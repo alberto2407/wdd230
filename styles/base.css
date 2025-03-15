@@ -11,6 +11,7 @@ body {
 /* Header */
 
 header {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +25,25 @@ header {
     margin-right: 2rem;
 }
 
+/* Dark Mode */
+
+main.dark {
+    background-color: black;
+}
+
+main.dark h1 {
+    color: white;
+}
+
+#dark-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 24px;
+    background: none;
+    cursor: pointer;
+}
+
 /* Navigation*/
 
 nav {
@@ -31,32 +51,58 @@ nav {
     margin: 0 auto;
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav a {
+ul.links li a {
     display: block;
-    color: #FFFFFF;
-    align-items: center;
+    padding: .75rem 2vw;
+    color: #fff;
     text-decoration: none;
-    padding: 1rem;
+    text-align: center;
 }
 
 .active {
     background-color: #643219;
 }
 
-nav a:hover {
-    border: 1px solid white;
+.links a:hover {
+    color: black;
+    background-color: white;    
 }
+
+/* Menu Hamburguer */
+
+#button::before {
+    content: "\2630";
+}
+
+#button {
+    font-size: 2rem;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    padding: .25rem 2vw;
+}
+
+ul.links {
+    display: none;
+}
+
+#button.open::before {
+    content: "x";
+}
+
+ul.links.open {
+    display: block;
+}
+
 
 /* Main*/
 
 .title-section {
     border-bottom: 1px solid black;
     padding: 1rem;
+    margin: 0;
 }
 
 .cards {
@@ -68,7 +114,7 @@ nav a:hover {
 
 .card {
     padding: 1rem;
-    background-color: #FFFFFF;
+    background-color: #eee;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 35px 2px rgba(0, 0, 0, 0.40);
@@ -82,10 +128,6 @@ nav a:hover {
     color: white;
 }
 
-li {
-    list-style-type: none;
-}
-
 .card a {  
     padding: 2px;
     text-decoration: none;
@@ -94,6 +136,7 @@ li {
 .card a:hover {
     text-decoration: underline;
 }
+
 .week-activities {
     display: flex;
     justify-content: space-between;
@@ -101,6 +144,10 @@ li {
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem;
+}
+
+.week {
+    list-style-type: none;
 }
 
 .p-info {

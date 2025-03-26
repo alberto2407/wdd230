@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+    
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

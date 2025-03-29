@@ -21,20 +21,28 @@
 
 <body>
     <header>
-        <img class="profile" src="images/me.jpg" alt="Alberto F. Conejo" width="80" height="100">
+        <img class="profile" src="images/me.webp" alt="Alberto F. Conejo" loading="lazy" width="80" height="100">
         <h1>Alberto F. Conejo</h1>
         <img src="images/dark-mode.svg" alt="dark-mode" id="dark-button">
     </header>
     <nav>
         <button id="button"></button>
         <ul class="links">
-            <li class="active"><a href="">Home</a></li>
+            <li><a class="active" href=""><span class="home">| Home |</span></a></li>
             <li><a href="">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="">Form</a></li>
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/small-hero.webp" media="(max-width: 500px)">
+                <source srcset="images/medium-hero.webp" media="(max-width: 1000px)">
+                <img src="images/large-hero.webp" alt="hero photo" loading="lazy">
+            </picture>
+           <h1>Barcelona, Spain Temple</h1>
+        </div>
         <h1 class="title-section">WDD 230: Web Frontend Development</h1>
         <div class="cards">
             <section class="card">
@@ -47,7 +55,7 @@
                             href="https://codepen.io/alberto2407/pen/RNwjNxV">Code Pen</a>|<a
                             href="week02/boom.html">DOM Manipulation</a></li>
                     <li class="week">Week 3:<a href="week03/images/landscape.webp">WebP</a>|<a
-                            href="week03/lazyload.html">Lazy Loading</a>|<a href="week03/responsive-images.html">Responsive Images</a><a href="week03/boom.html">DOM Manipulation 2</a></li>
+                            href="week03/lazyload.html">Lazy Loading</a>|<a href="week03/responsive-images.html">Responsive Images</a>|<a href="week03/boom.html">Local Storage</a></li>
                     <li class="week">Week 4:<a href=""></a>|<a href=""></a>|<a href=""></a></li>
                     <li class="week">Week 5:<a href=""></a>|<a href=""></a>|<a href=""></a></li>
                     <li class="week">Week 6:<a href=""></a>|<a href=""></a>|<a href=""></a></li>
@@ -56,17 +64,24 @@
             </section>
             <section class="card">
                 <h2>Information</h2>
-                <p class="p-info"><strong>Spain, Barcelona</strong></p>
-                <p class="p-info"><strong>Weather</strong></p>
-                <p class="p-info"><strong>Visits:</strong></p>
+                <p class="p-info"><strong>Weather:</strong></p>
+                <p class="p-info"><strong>Visits: </strong><span id="visits"></span></p>
             </section>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.260905930551!2d2.073756643523302!3d41.563597566736355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a495450618b6a9%3A0xf8b0bb875fc1b884!2sAntic%20baixador%20de%20Castellarnau%20(RENFE)!5e0!3m2!1ses!2ses!4v1743095205510!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </main>
     <footer>
-        <p>&copy; | <span id="currentYear"></span> Alberto F. Conejo | Barcelona, Spain</p>
+        <div class="copyright">
+        <p class="footer-info">&copy; 🍀 <span id="currentYear"></span> Alberto F. Conejo 🍀 </p>
+        <div class="location">
+        <p>Barcelona</p>
+        <img class="country-band" src="images/Spain.webp" alt="Ecuador" loading="lazy">
+        </div>
+        </div>
         <p class="last-modified"><span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/getDates.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 

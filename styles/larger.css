@@ -1,6 +1,10 @@
 @media (min-width: 750px) {
     .cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 70% 30%;
+    }
+
+    .map {
+        grid-column: 1/3;
     }
 
     /* Navigation */
@@ -8,6 +12,18 @@
     nav ul {
         display: flex;
         justify-content: space-evenly;
+    }
+
+    .active {
+        background-color: black;
+    }
+
+    .home {
+        color: yellow;
+    }
+
+    .home:hover {
+        color: black;
     }
 
     /* Menu Hamburger */
@@ -20,4 +36,14 @@
         display: flex;
 
     }
+
+    /*Footer*/
+    
+    .copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 }

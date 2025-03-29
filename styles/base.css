@@ -57,6 +57,7 @@ ul.links li a {
     color: #fff;
     text-decoration: none;
     text-align: center;
+    font-size: x-large;
 }
 
 .active {
@@ -99,6 +100,32 @@ ul.links.open {
 
 /* Main*/
 
+/* Hero Section */
+
+.hero {
+    position: relative;
+}
+
+.hero picture {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    text-align: center;
+}
+
 .title-section {
     border-bottom: 1px solid black;
     padding: 1rem;
@@ -116,13 +143,13 @@ ul.links.open {
     padding: 1rem;
     background-color: #eee;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 5px 5px 35px 2px rgba(0, 0, 0, 0.40);
 }
 
 .card h2 {
     text-align: center;
-    border-bottom: 1px solid black;
+    padding: 1rem;
     border-radius: 5px;
     background-color: #1D4D72;
     color: white;
@@ -139,8 +166,6 @@ ul.links.open {
 
 .week-activities {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem;
@@ -155,6 +180,18 @@ ul.links.open {
     padding: 1rem;
 }
 
+.map {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
 /* Footer */
 
 footer {
@@ -162,8 +199,23 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+    font-size: 25px;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.country-band {
+    width: auto;
+    height: 50px;
 }
 
 .last-modified {
     color: yellow;
+    font-size: 15px;
 }

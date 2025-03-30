@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development - Alberto F. Conejo - Assignment Chamber of Commerce">
+    <meta name="author" content="Alberto F. Conejo">
+    <meta property="og:title" content="Alberto Flores - WDD230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://es.wikipedia.org/wiki/Otavalo#/media/Archivo:Mapa_de_localizaci%C3%B3n_Imbabura.svg">
+    <meta property="og:url" content="https://alberto2407.github.io/wdd230/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/cambra-favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/cambra-logo.svg" alt="Cambra logo" loading="lazy">
+        </a>
+    </header>
+    <button id="button"></button>
+    <nav>
+        <ul class="links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
+        </ul>
+    </nav>
+    <main class="discover">
+        <section class="info">
+            <div class="visitors">
+                <h3>Visitor Message</h3>
+                <p id="message"></p>
+            </div>
+            <div class="origin">
+                <h3>Origin</h3>
+                <p>The Official Chamber of Commerce, Industry and Navigation of Barcelona was created in 1886,
+                    coinciding
+                    with a period of major urban and cultural transformations that would place Barcelona once again on
+                    the
+                    international scene, from the Cerdà Plan to Catalan Modernism.</p>
+            </div>
+            <div class="description">
+                <h3>Catalonia Description</h3>
+                <p><strong>Population: </strong>8.012.231</p>
+                <p><strong>Demographic: </strong> 50.66% Female,<br> 49.34% Male</p>
+                <p><strong>Education: </strong>2.679 Schools,<br> 12 Universities</p>
+                <p><strong>Diversity: </strong>Italian, Colombian, Argentinean, French, Venezuelan, Marrocan, Bolivian,
+                    Rumanian, Brasilean and Indian</p>
+            </div>
+            <div class="events">
+                <h3>Events</h3>
+                <ul class="events">
+                    <li>Power BI news to increase productivity</li>
+                    <li>Regulations on commercial and industrial packaging: don't be left behind</li>
+                    <li>FEM DEO: Leadership in key F</li>
+                </ul>
+            </div>
+        </section>
+        <section class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20132.629630650852!2d2.1532923052023567!3d41.4015979471171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a296d22233c9%3A0xb53ef784bd3812ea!2sCamara%20Oficial%20de%20Comercio%2C%20Industria%20y%20Navegacion%20de%20Barcelona!5e0!3m2!1ses!2ses!4v1743295930667!5m2!1ses!2ses"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <h2>About Catalonia</h2>
+            <p>Catalonia is an autonomous community of Spain, considered a
+                historical nationality in its Statute of Autonomy. Located in the northeast of the Iberian Peninsula, it
+                occupies a territory of approximately 32,000 km² bordered to the north by Andorra and the French region
+                of Occitania (Haute-Garonne, Ariège, and the Pyrénées-Orientales), to the east by the Mediterranean Sea
+                along a maritime strip of approximately 580 kilometers, to the south by the Valencian Community
+                (province of Castellón), and to the west by Aragon (provinces of Teruel, Zaragoza, and Huesca). This
+                strategic location has fostered a very close relationship with the territories of the Mediterranean
+                basin and with continental Europe. Catalonia is made up of the provinces of Barcelona, ​​Girona, Lleida,
+                and Tarragona. Its capital is the city of Barcelona.</p>
+            <img class="image" src="images/image-1.webp" alt="Talk" loading="lazy">
+            <img class="image" src="images/image-2.webp" alt="Comunity" loading="lazy">
+            <img class="image" src="images/image-3.webp" alt="Comerce" loading="lazy">
+            <img class="image" src="images/image-4.webp" alt="Turism" loading="lazy">
+            <img class="image" src="images/image-5.webp" alt="Activities" loading="lazy">
+            <img class="image" src="images/image-6.webp" alt="Catalonia" loading="lazy">
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img class="cambra-logo" src="images/cambra-favicon.ico" alt="Cambra logo">
+            <p class="address"><strong>Cambra de Comerç de Barcelona</strong><br> Av. Diagonal, 452 08006 Barcelona</p>
+        </div>
+        <div class="contact-info">
+            <p class="contact">cambra@cambrabcn.cat<br>934 169 300</p>
+        </div>
+        <p class="footer-info"><span id="currentYear"></span> Barcelona Chamber | <strong>Alberto F. Conejo</strong> |
+            WDD 230 Project | <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

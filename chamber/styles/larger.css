@@ -46,4 +46,10 @@
         grid-column: 1 / 3;
         padding: 1rem;
     }
+
+    /* -------------------------------------------------------> Discover <------------------------------------------------------- */
+    .discover {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

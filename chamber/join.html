@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development - Alberto F. Conejo - Assignment Chamber of Commerce">
+    <meta name="author" content="Alberto F. Conejo">
+    <meta property="og:title" content="Alberto Flores - WDD230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://es.wikipedia.org/wiki/Otavalo#/media/Archivo:Mapa_de_localizaci%C3%B3n_Imbabura.svg">
+    <meta property="og:url" content="https://alberto2407.github.io/wdd230/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/cambra-favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/cambra-logo.svg" alt="Cambra logo">
+        </a>
+    </header>
+    <button id="button"></button>
+    <nav>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main class="join">
+        <div class="container-2">
+            <form method="get" action="thanks.html" class="join-form">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>First Name:<input type="text" name="firstName" id="firstName" required></label>
+                    <label>Last Name:<input type="text" name="lastName" id="lastName" required></label>
+                    <label>Title/Position:<input type="text" name="title" id="title" pattern="[A-Za-z\-\s]{7,}"
+                            title="Only letters, hyphens, and spaces. Minimum 7 characters."></label>
+                    <label>Email:<input type="email" name="email" id="email" required
+                            placeholder="you@example.com"></label>
+                    <label>Mobile Phone:<input type="tel" name="phone" id="phone" placeholder="123-456-7890" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Organization Information</legend>
+                    <label>Organization Name:<input type="text" name="organization" id="organization" required></label>
+                    <label>Membership Level:
+                        <select name="membership" id="membership">
+                            <option value="" disabled selected>Select a membership level...</option>
+                            <option value="np">NP Membership (Free for non-profits)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>Organization Description:<textarea name="description" id="description"
+                            rows="5"></textarea></label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <input type="submit" value="Add my organization">
+            </form>
+            <section class="membership-cards">
+                <h2>Membership Levels</h2>
+                <div class="membership-card-container">
+                    <div class="member-card">
+                        <h3 class="np">Non Profit</h3>
+                        <div>
+                            <p><strong>Cost:</strong> For non profit organizations and there is no fee.</p>
+                            <p><strong>Benefits:</strong></p>
+                            <ul>
+                                <li>Access to basic resources and information.</li>
+                                <li>Subscription to newsletters or updates.</li>
+                                <li>Invitation to general events or meetings.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <h3 class="bronze">Bronze Membership</h3>
+                        <div>
+                            <p><strong>Cost:</strong> Slightly higher than the non-profit level.</p>
+                            <p><strong>Benefits:</strong></p>
+                            <ul>
+                                <li>All benefits of the non-profit level.</li>
+                                <li>Additional access to certain training sessions or workshops.</li>
+                                <li>Recognition on the organization's website or publications.</li>
+                                <li>Discounted rates for specific events or services.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <h3 class="silver">Silver Membership</h3>
+                        <div>
+                            <p><strong>Cost:</strong> Slightly higher than the Bronze level.</p>
+                            <p><strong>Benefits:</strong></p>
+                            <ul>
+                                <li>All benefits of the Bronze level.</li>
+                                <li>Priority registration for events or workshops.</li>
+                                <li>Featured spotlight positions on the organization's website or social media.</li>
+                                <li>Enhanced networking opportunities, such as exclusive meet-and-greets.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <h3 class="gold">Gold Membership</h3>
+                        <div>
+                            <p><strong>Cost:</strong> Slightly higher than the Silver level.</p>
+                            <p><strong>Benefits:</strong></p>
+                            <ul>
+                                <li>All benefits of the Silver level.</li>
+                                <li>Exclusive access to VIP events or private networking sessions.</li>
+                                <li>Personalized advertising opportunities, such as dedicated email blasts or sponsored
+                                    content.</li>
+                                <li>Special recognition at major events or in organizational materials.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img class="cambra-logo" src="images/cambra-favicon.ico" alt="Cambra logo">
+            <p class="address"><strong>Cambra de Comerç de Barcelona</strong><br> Av. Diagonal, 452 08006 Barcelona</p>
+        </div>
+        <div class="contact-info">
+            <p class="contact">cambra@cambrabcn.cat<br>934 169 300</p>
+        </div>
+        <p class="footer-info"><span id="currentYear"></span> Barcelona Chamber | <strong>Alberto F. Conejo</strong> |
+            WDD 230 Project | <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>

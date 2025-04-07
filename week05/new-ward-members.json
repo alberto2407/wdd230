@@ -1,0 +1,43 @@
+{
+    "familyName": "Flores",
+    "moveIDate": "2002-06-01",
+    "numberOfMembers": 7,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Luis Flores",
+            "gender": "Male",
+            "birthdate": "1971-03-27"
+        },
+        {
+            "name": "Maria Flores",
+            "gender": "Female",
+            "birthdate": "1981-03-26"
+        },
+        {
+            "name": "David Flores",
+            "gender": "Male",
+            "birthdate": "1999-08-11"
+        },
+        {
+            "name": "Alberto Flores",
+            "gender": "Male",
+            "birthdate": "2000-07-24"
+        },
+        {
+            "name": "Ainara Flores",
+            "gender": "Female",
+            "birthdate": "2008-04-22"
+        },
+        {
+            "name": "Leire Flores",
+            "gender": "Female",
+            "birthdate": "2013-03-15"
+        },
+        {
+            "name": "Yariway Flores",
+            "gender": "Female",
+            "birthdate": "2018-07-20"
+        }
+    ]
+}

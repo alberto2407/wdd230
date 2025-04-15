@@ -164,7 +164,7 @@ ul.links.open {
     text-decoration: underline;
 }
 
-.week-activities {
+#week-activities {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -173,11 +173,47 @@ ul.links.open {
 
 .week {
     list-style-type: none;
+    padding: .5rem;
 }
+
+.week ul::before {
+    content: "> ";
+}
+
+.week ul a {
+    text-decoration: none;
+}
+.week ul a:hover {
+    text-decoration:  underline;
+}
+
+.week ul a::after {
+    content: "|";
+    padding: .3rem;
+    color: black;
+}
+
 
 .p-info {
     text-align: center;
     padding: 1rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+figure img {
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .map {

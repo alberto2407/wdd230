@@ -16,7 +16,7 @@ async function apiFetch() {
             console.log(data);
             displayResults(data);
         } else {
-            throw Error(await response.text());
+            throw new Error(await response.text());
         }
     } catch (error) {
         console.log(error);
@@ -36,9 +36,10 @@ function displayResults(data) {
     data.weather.forEach((weatherEvent) => {
         const iconSrc = `https://openweathermap.org/img/wn/${weatherEvent.icon}@2x.png`;
         const iconDesc = weatherEvent.description;
+        const capitalizedDesc = capitalize(iconDesc);
         weatherIcon.setAttribute('src', iconSrc);
         weatherIcon.setAttribute('alt', iconDesc);
-        captionDesc.innerHTML = `${iconDesc}`;;
+        captionDesc.innerHTML = `${capitalizedDesc}`;;
     });
 }
 
@@ -46,6 +47,6 @@ function capitalize(string) {
     const words = string.split(' ');
 
     return words.map(word => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
+        return word[0].toUpperCase() + word.substring(1);
     }).join(' ');
 }

@@ -1,5 +1,5 @@
 const baseURL = 'https://alberto2407.github.io/wdd230/';
-const linksURL = `./data/links.json`;
+const linksURL = `https://alberto2407.github.io/wdd230/data/links.json`;
 
 async function getLinks() {
     try {
@@ -17,7 +17,7 @@ async function getLinks() {
 
 function displayLinks(weeks) {
     const activitiesContainer = document.getElementById('week-activities');
-    
+
     weeks.forEach(week => {
         const weekli = document.createElement('li');
         weekli.textContent = week.week;

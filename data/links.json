@@ -21,7 +21,7 @@
             "week": "Week 2",
             "links": [
                 {
-                    "url": "wee02/boom.html",
+                    "url": "week02/boom.html",
                     "title": "DOM Manipulation"
                 },
                 {
@@ -67,7 +67,7 @@
                     "title": "Table Build"
                 },
                 {
-                    "url": "wwek04/formbuild.html",
+                    "url": "week04/form.html",
                     "title": "Form Build"
                 }
             ]
@@ -76,7 +76,7 @@
             "week": "Week 5",
             "links": [
                 {
-                    "url": "https://codepen.io/alberto2407/pen/azbxydV",
+                    "url": "https://codepen.io/alberto2407/full/azbxydV",
                     "title": "CodePen"
                 },
                 {

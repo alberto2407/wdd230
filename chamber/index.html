@@ -26,7 +26,7 @@
 <body>
     <header>
         <a href="index.html">
-            <img class="logo" src="images/cambra-logo.svg" alt="Cambra logo">
+            <img class="logo" src="images/cambra-logo.svg" alt="Cambra logo" loading="lazy">
         </a>
     </header>
     <button id="button"></button>
@@ -34,9 +34,13 @@
         <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
+        <div id="banner" class="banner">
+            <p>Join us at the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.</p>
+            <button id="closeBtn" class="close-btn"></button>
+        </div>
     </nav>
     <main>
         <section class="hero">
@@ -56,9 +60,19 @@
                 <p class="event-info">FEM DEO: Leadership in key F</p>
             </div>
             <div class="weather">
-                <h2 class="weather-title">Weather</h2>
-                <p class="weather-info">Humidity: 70%</p>
-                <p class="weather-info">Wind Speed: 10mph</p>
+                <h2 class="weather-title">Current Weather</h2>
+                <div class="weather-info">
+                    <p id="weather"></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+
+                </div>
+                <div class="weather-forecast">
+                    <h3>3 Day Forecast</h3>
+                    <div id="forecast" class="forecast"></div>
+                </div>
             </div>
             <div class="box-1">
                 <a href="https://www.consolatdemar.org/es/"><img src="images/Consolat_de_Mar_205x101.webp"
@@ -69,7 +83,8 @@
                         alt="Llotja de Mar" loading="lazy"></a>
             </div>
             <div class="box-3">
-                <a href="https://www.donaempresaeconomia.org/"><img src="images/ODEE_205x101.webp" alt="ODEE" loading="lazy"></a>
+                <a href="https://www.donaempresaeconomia.org/"><img src="images/ODEE_205x101.webp" alt="ODEE"
+                        loading="lazy"></a>
             </div>
         </section>
     </main>
@@ -81,9 +96,11 @@
         <div class="contact-info">
             <p class="contact">cambra@cambrabcn.cat<br>934 169 300</p>
         </div>
-        <p class="footer-info"><span id="currentYear"></span> Barcelona Chamber | <strong>Alberto F. Conejo</strong> | WDD 230 Project | <span id="lastModified"></span></p>
+        <p class="footer-info"><span id="currentYear"></span> Barcelona Chamber | <strong>Alberto F. Conejo</strong> |
+            WDD 230 Project | <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </body>
 
 </html>

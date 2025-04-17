@@ -76,6 +76,39 @@
      background-color: white;
  }
 
+ .banner {
+     background-color: #f2f2f2;
+     padding: 10px;
+     text-align: center;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     display: none;
+     z-index: 1;
+ }
+
+ .close-btn {
+     background-color: var(--cerulean);
+     border: none;
+     color: #cb3333;
+     cursor: pointer;
+     margin-top: 10px;
+     font-family: var(--lato-regular-font-family);
+     font-weight: bold;
+     padding: 5px 10px;
+     border-radius: 5px;
+ }
+
+ .close-btn:hover {
+     background-color: #cb3333;
+     color: #fff;
+ }
+
+ .close-btn::before {
+     content: "❌";
+ }
+
  /* Menu Hamburguer */
 
  #button::before {
@@ -215,21 +248,44 @@
      text-align: center;
  }
 
+ .weather-forecast {
+     padding: .5rem;
+     text-align: center;
+ }
+
+ .weather-forecast h3 {
+     text-align: center;
+     border-bottom: 1px solid black;
+     padding-bottom: .5rem;
+ }
+
+ .weather-forecast p {
+     padding-top: 1rem;
+ }
+
+ .forecast {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 1rem;
+ }
+
  .event-info {
      padding: .5rem;
-
  }
 
  .box-1,
  .box-2,
  .box-3 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
      padding: 1rem;
      background-color: #fff;
      border: 1px solid black;
      border-radius: 5px;
      box-shadow: 5px 5px 35px 2px rgba(0, 0, 0, 0.40);
      height: 100%;
-     text-align: center;
  }
 
  .box-1 {
@@ -390,82 +446,82 @@
  }
 
  input:required {
-    border-left: solid 5px red;
-}
+     border-left: solid 5px red;
+ }
 
-input:required:valid {
-    border-left: solid 5px green;
-}
+ input:required:valid {
+     border-left: solid 5px green;
+ }
 
  .membership-cards {
-    grid-column: 2/3;
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 600px;
-}
+     grid-column: 2/3;
+     padding-top: 2rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     max-width: 600px;
+ }
 
-.membership-cards h2 {
-    text-align: center;
-    margin: 0;
-}
+ .membership-cards h2 {
+     text-align: center;
+     margin: 0;
+ }
 
-.membership-card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-}
+ .membership-card-container {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     padding: 20px;
+ }
 
-.member-card {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border: solid 1px #999;
-    border-radius: 4px;
-}
+ .member-card {
+     display: flex;
+     flex-direction: column;
+     background-color: var(--white);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     border: solid 1px #999;
+     border-radius: 4px;
+ }
 
-.member-card h3 {
-    margin: 0 0 5px 0;
-    padding: 1.2rem;
-    border-radius: 3px;
-}
+ .member-card h3 {
+     margin: 0 0 5px 0;
+     padding: 1.2rem;
+     border-radius: 3px;
+ }
 
-.member-card div {
-    padding: 0.75rem;
-}
+ .member-card div {
+     padding: 0.75rem;
+ }
 
-.member-card p {
-    margin: 0;
-    padding-left: 1rem;
-}
+ .member-card p {
+     margin: 0;
+     padding-left: 1rem;
+ }
 
-.member-card ul {
-    margin-top: 0;
-    padding-left: 2rem;
-}
+ .member-card ul {
+     margin-top: 0;
+     padding-left: 2rem;
+ }
 
-.np {
-    background-color: seaGreen;
-    color: white;
-}
+ .np {
+     background-color: seaGreen;
+     color: white;
+ }
 
-.bronze {
-    background-color: #cd7f32;
-    color: white;
-}
+ .bronze {
+     background-color: #cd7f32;
+     color: white;
+ }
 
-.silver {
-    background-color: #999B9B;
-    color: black;
-}
+ .silver {
+     background-color: #999B9B;
+     color: black;
+ }
 
-.gold {
-    background-color: #ffd700;
-    color: black;
-}
+ .gold {
+     background-color: #ffd700;
+     color: black;
+ }
 
  input,
  textarea,
@@ -492,15 +548,15 @@ input:required:valid {
  /* -------------------------------------------------------> Thanks <------------------------------------------------------- */
 
  .thanks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    background-color: rgb(212, 212, 212);
-    padding: 2rem 3rem;
-    text-align: center;
-    height: 70vh;
-    margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: white;
+     background-color: rgb(212, 212, 212);
+     padding: 2rem 3rem;
+     text-align: center;
+     height: 70vh;
+     margin: 0 auto;
  }
 
  .thanks h1 {
@@ -526,4 +582,102 @@ input:required:valid {
 
  .thanks a:hover {
      background-color: #0056b3;
+ }
+
+ /* -------------------------------------------------------> Directory <------------------------------------------------------- */
+ .directory {
+     background-color: rgb(212, 212, 212);
+     padding: 1rem;
+     text-align: center;
+ }
+
+ #cards {
+     margin: 2rem;
+     padding: 20px;
+ }
+
+ .menu {
+     padding: 0.5rem;
+     text-align: center;
+ }
+
+ .menu button {
+     padding: 0.5rem 1rem;
+     margin: 0.5rem;
+     border: none;
+     border-radius: 5px;
+     background-color: var(--indigo-dye);
+     color: var(--white);
+     cursor: pointer;
+ }
+
+ .member-card {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     padding: 1rem;
+     background-color: #fff;
+     border: 1px solid black;
+     border-radius: 5px;
+     height: 100%;
+ }
+
+ .grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     grid-gap: 1rem;
+     align-items: center;
+ }
+
+ .grid section {
+     text-align: center;
+ }
+
+ .grid section>* {
+     margin: 0.1rem;
+ }
+
+ .list {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .list section {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-areas:
+         "title phone"
+         "address1 email"
+         "address2 .";
+     margin: 0;
+     height: auto;
+ }
+
+ .list section>* {
+     margin: 0 1rem;
+ }
+
+ .list section img {
+     display: none;
+ }
+
+ .list section h3 {
+     font-size: 0.75rem;
+     grid-area: title;
+ }
+
+ .list section p:nth-of-type(1) {
+     grid-area: address1;
+ }
+
+ .list section p:nth-of-type(2) {
+     grid-area: address2;
+ }
+
+ .list section p:nth-of-type(3) {
+     grid-area: phone;
+ }
+
+ .list section a {
+     grid-area: email;
  }

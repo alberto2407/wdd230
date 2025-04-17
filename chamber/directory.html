@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thnak You!</title>
-    <meta name="description"
-        content="WDD 230 - Web Frontend Development - Alberto F. Conejo - Assignment Chamber of Commerce">
+    <title>Directory</title>
+    <meta name="description" content="Directory Assignment">
     <meta name="author" content="Alberto F. Conejo">
     <meta property="og:title" content="Alberto Flores - WDD230 - Web Frontend Development">
     <meta property="og:type" content="website">
@@ -20,6 +19,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
     <link rel="icon" href="images/cambra-favicon.ico">
 </head>
 
@@ -38,12 +39,15 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <main class="thanks">
-        <div class="message">
-            <h1>Thank You!</h1>
-            <p>Your membership application has been successfully submitted. We'll be in touch soon.</p>
-            <a href="index.html">Return to Homepage</a>
+    <main class="directory">
+        <h2>Directory of Business Members</h2>
+        <div class="menu">
+            <button id="gridBtn">Grid</button>
+            <button id="listBtn">List</button>
         </div>
+        <article id="cards"></article>
+
+        
     </main>
     <footer>
         <div class="footer-logo">
@@ -56,7 +60,7 @@
         <p class="footer-info"><span id="currentYear"></span> Barcelona Chamber | <strong>Alberto F. Conejo</strong> |
             WDD 230 Project | <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/script.js"></script>
+
 </body>
 
 </html>

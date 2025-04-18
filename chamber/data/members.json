@@ -5,7 +5,7 @@
             "address": "Carrer de Sèneca, 11, Gràcia, 08006 Barcelona",
             "phone": "933 63 77 11",
             "website": "https://www.dicomevents.com/",
-            "icon": "https://alberto2407.github.io/wdd230/chamber/images/De.webp",
+            "logo": "https://alberto2407.github.io/wdd230/chamber/images/Dicom_events.webp",
             "membershipType": "Gold"
         },
         {
@@ -13,7 +13,7 @@
             "address": "Pg. de la Bonanova, 97, Sarrià-Sant Gervasi, 08017 Barcelona",
             "phone": "935 04 74 50",
             "website": "https://www.ross-lgl.com/",
-            "icon": "https://alberto2407.github.io/wdd230/chamber/images/Ross.webp",
+            "logo": "https://alberto2407.github.io/wdd230/chamber/images/Ross.webp",
             "membershipType": "Silver"
         },
         {
@@ -21,7 +21,7 @@
             "address": "Parc Agrobiotech, Edifici H1 · 2a Planta B, 25003 Lleida",
             "phone": "973 28 23 00",
             "website": "https://www.lleida.net/es",
-            "icon": "https://alberto2407.github.io/wdd230/chamber/images/Lleida.webp",
+            "logo": "https://alberto2407.github.io/wdd230/chamber/images/LleidaNet.webp",
             "membershipType": "Silver"
         },
         {
@@ -29,7 +29,7 @@
             "address": "Pau Claris 97, 08009 Barcelona",
             "phone": "944 00 26 75",
             "website": "https://legalsolvers.es/",
-            "icon": "https://alberto2407.github.io/wdd230/chamber/images/Lawesome.webp",
+            "logo": "https://alberto2407.github.io/wdd230/chamber/images/Lawesome.webp",
             "membershipType": "Gold"
         },
         {
@@ -37,7 +37,7 @@
             "address": "Travessera de les corts 365, 08029 Barcelona",
             "phone": "930 40 99 93",
             "website": "https://groupmee.com/",
-            "icon": "https://alberto2407.github.io/wdd230/chamber/images/Groupmee.webp",
+            "logo": "https://alberto2407.github.io/wdd230/chamber/images/Groupmee.webp",
             "membershipType": "Bronze"
         },
         {
@@ -45,7 +45,7 @@
             "address": "Carrer Llauder, 22, 08302 Mataró, Barcelona",
             "phone": "936 11 23 92",
             "website": "https://innovait.cat/",
-            "icon": "https://alberto2407.github.io/wdd230/chamber/images/Innova.webp",
+            "logo": "https://alberto2407.github.io/wdd230/chamber/images/Innova.webp",
             "membershipType": "Silver"
         },
         {
@@ -53,7 +53,7 @@
             "address": "Carrer dels Pous, 20, 08740 Sant Andreu de la Barca, Barcelona",
             "phone": "936 82 57 88",
             "website": "https://ieaisa.es/",
-            "icon": "https://alberto2407.github.io/wdd230/chamber/images/Ieaisa.webp",
+            "logo": "https://alberto2407.github.io/wdd230/chamber/images/Ieaisa.webp",
             "membershipType": "Non Profit"
         },
         {
@@ -61,7 +61,7 @@
             "address": "Carrer Pablo Iglesias, 58, 08302 Mataró, Barcelona",
             "phone": "931 79 07 03",
             "website": "https://grupqualia.com/",
-            "icon": "https://alberto2407.github.io/wdd230/chamber/images/Grupqualia.webp",
+            "logo": "https://alberto2407.github.io/wdd230/chamber/images/Grupqualia.webp",
             "membershipType": "Gold"
         },
         {
@@ -69,7 +69,7 @@
             "address": "Carrer de Frederic Mompou, 5, 08960 Sant Just Desvern, Barcelona",
             "phone": "934 80 31 31",
             "website": "https://neoelectra.es/",
-            "icon": "https://alberto2407.github.io/wdd230/chamber/images/Neoelectra.webp",
+            "logo": "https://alberto2407.github.io/wdd230/chamber/images/Neoelectra.webp",
             "membershipType": "Bronze"
         },
         {
@@ -77,7 +77,7 @@
             "address": "Carrer d'Isabel la Catòlica, 8, L'Eixample, 46004 València, Valencia",
             "phone": "963 94 56 82",
             "website": "https://implicacf.com/",
-            "icon": "https://alberto2407.github.io/wdd230/chamber/images/Implica-corporate-finance.webp",
+            "logo": "https://alberto2407.github.io/wdd230/chamber/images/ImplicaCF.webp",
             "membershipType": "Silver"
         }
     ]

@@ -26,7 +26,7 @@ function displayMembers(members) {
     logo.setAttribute('src', member.logo);
     logo.setAttribute('alt', `${member.name} Logo`);
     logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('width', 'auto');
+    logo.setAttribute('width', '100%');
     logo.setAttribute('height', 'auto');
 
     name.textContent = member.name;
@@ -66,4 +66,43 @@ listBtn.addEventListener("click", showList); // example using defined function
 function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
+}
+
+// Spothlight
+function displaySpotlightMembers(members) {
+  // console.log(members);
+
+  let topMembers = members.filter((member) => member.membership === "Silver" || member.membership === "Gold");
+
+  let randomMembers = topMembers.sort(() => 0.5 - Math.random()).slice(0, 4);
+
+  const spotlights = document.querySelector(".cards");
+
+  randomMembers.forEach((member) => {
+      const spotlight = document.createElement("article");
+      spotlight.classList.add("card");
+  
+     let status = member.membership === "Silver" ? "silver" : "gold";
+      spotlight.classList.add(status);
+  
+      let logo = document.createElement("img");
+      logo.setAttribute("src", member.logo);
+      logo.setAttribute("alt", `${member.name} Logo`);
+      logo.setAttribute("loading", "lazy");
+      logo.setAttribute("width", "100%");
+      logo.setAttribute("height", "auto");
+  
+      let name = document.createElement("h3");
+      name.textContent = member.name;
+  
+      let website = document.createElement("a");
+      website.setAttribute("href", member.website);
+      website.textContent = "Visit Website";
+      website.setAttribute("target", "_blank");
+  
+      spotlight.appendChild(logo);
+      spotlight.appendChild(name);
+      spotlight.appendChild(website);
+      spotlights.appendChild(spotlight);
+  });
 }
